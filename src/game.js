@@ -1,5 +1,7 @@
 export class Player {
-  constructor() {
-    
+  constructor(name) {
+    this.name = name;
+    this.health = 500;
+    this.inventory = []
   }
 }
