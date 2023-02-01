@@ -12,5 +12,15 @@ describe ('Player object functionality', () => {
     expect(newPlayer).toEqual({name:"Test Name", health:500, inventory:[]})
   });
 
+  describe('attack method', () => {
 
-})
+    test('it should receive in a player object as a target, which would then remove 50 health from it', () => {
+      let secondPlayer = new Player("Enemy");
+      newPlayer.attack(secondPlayer);
+      expect(secondPlayer.health).toEqual(450);
+    });
+
+  });
+
+});
+

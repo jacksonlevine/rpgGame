@@ -4,4 +4,8 @@ export class Player {
     this.health = 500;
     this.inventory = []
   }
+      
+  attack(player) {
+    
+  }
 }
