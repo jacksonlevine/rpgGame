@@ -1,8 +1,9 @@
 export class Player {
-  constructor(name) {
+  constructor(name, type) {
     this.name = name;
     this.health = 500;
     this.inventory = [];
+    this.characterType = type;
   }
       
   attack(player) {
