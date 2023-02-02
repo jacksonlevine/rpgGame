@@ -14,6 +14,11 @@ describe ('Player object functionality', () => {
     expect(newPlayer.inventory).toEqual([]);
   });
 
+  test('it should create a player of the given type if given a string character type in the constructor', () => {
+    newPlayer = new Player('Test Name', 'Orc');
+    expect(newPlayer.characterType).toEqual('Orc');
+  });
+
   describe('setStats', () => {
 
     beforeEach(() => {
