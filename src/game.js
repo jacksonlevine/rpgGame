@@ -6,6 +6,11 @@ export class Player {
   }
       
   attack(player) {
-    
+    player.health -= 50;
   }
+
+  setStats() {
+
+  }
+
 }
